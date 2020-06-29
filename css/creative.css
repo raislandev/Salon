@@ -9807,7 +9807,7 @@ header.masthead h1 {
 }
 
 footer{
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .modal-header{
@@ -9863,8 +9863,12 @@ h2{
 
 .btn-contact{
   padding: 10px 25px;
-  background-color: rgb(145, 135, 135);
+  background-color: rgb(138, 157, 168);
  
+}
+
+#about{
+  margin-top: 1rem;
 }
 
 .btn-about{
@@ -9872,7 +9876,7 @@ h2{
 }
 
 .btn-contact:hover{
-  background-color: rgba(145, 135, 135,0.6);
+  background-color: rgba(138, 157, 168,0.6);
 }
 
 .btn-contact:active:focus{
@@ -10019,7 +10023,8 @@ h2{
 	display: block;
 	border-radius: 3px;
 	box-sizing: border-box;
-	border: none;
+  border: none;
+  border-color: gray;
 	resize: none;
 	font: inherit;
 	font-size: 14px;
@@ -10027,6 +10032,7 @@ h2{
 	width: 500px;
 	padding: 18px;
 }
+
 
 .footer-distributed ::-moz-placeholder {
 	opacity: 1;
@@ -10053,7 +10059,7 @@ h2{
 }
 
 .footer-distributed form button:hover{
-  background-color:  #7d919c;
+  background-color:  #708792;
 }
 /* If you don't want the footer to be responsive, remove these media queries */
 
