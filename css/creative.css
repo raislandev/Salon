@@ -5944,6 +5944,7 @@ a.close.disabled {
   transition: transform 0.6s ease-in-out;
 }
 
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
@@ -9719,15 +9720,17 @@ header.masthead h1 {
 }
 
 
-
 .hovereffect {
   width: 100%;
   height: 100%;
   overflow: hidden;
   text-align: center;
-  cursor: default;
-  background: rgb(145, 103, 194);
+  cursor: pointer;
+  /*background: rgb(145, 103, 194);*/
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%,rgba(0, 0, 0, 0.8) 100%);
+
 }
+
 
 .hovereffect .overlay {
   width: 100%;
@@ -9737,12 +9740,13 @@ header.masthead h1 {
   top: 0;
   left: 0;
   padding: 50px 20px;
+  visibility: hidden;
+
 }
 
 .hovereffect img {
   display: block;
-  position: relative;
-  max-width: none;
+  height: 275px;
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -9757,6 +9761,11 @@ header.masthead h1 {
   filter: alpha(opacity=40);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+
+}
+
+.hovereffect:hover .overlay {
+  visibility: visible;
 }
 
 .hovereffect h2 {
@@ -9830,13 +9839,10 @@ footer{
   color:var(--gray);
 }
 
-.d-block{
-  height: 450px;
-}
 
-@media (max-width:600px){
+@media (max-width:990px){
   .intro-page{
-      margin-top: 100px;
+      margin-top: 110px;
       
   }
   .d-block{
@@ -9906,20 +9912,22 @@ h2{
 
 
 
-
-
-
 /* footer */
 
 .contact-footer{
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
+  
 }
 
-@media (max-width:600px){
+@media (max-width:990px){
   .contact-footer{
     display: block;
   }
+
+  .footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
 }
 
 .footer-distributed{
@@ -9981,6 +9989,11 @@ h2{
 	margin-top: 40px;
 }
 
+.footer-distributed .footer-icons a:hover{
+	 background-color: #6610f2;
+}
+
+
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -10002,7 +10015,7 @@ h2{
 
 .footer-distributed .footer-right{
 	display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .footer-distributed .footer-right p{
@@ -10055,7 +10068,6 @@ h2{
 	border: 0;
 	padding: 10px 30px;
 	font-weight: bold;
-	float: right;
 }
 
 .footer-distributed form button:hover{
@@ -10099,11 +10111,6 @@ h2{
 		padding: 30px;
 	}
 
-	.footer-distributed .footer-left{
-		margin-bottom: 40px;
-	}
-
-
 	.footer-distributed form{
 		display: block;
 	}
@@ -10114,4 +10121,11 @@ h2{
   
 }
 
+.close:focus{
+  outline-style:none;
+}
 
+.modal-body .carousel-item{
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(0, 0, 0, 0.5) 100%);
+
+}
