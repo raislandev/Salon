@@ -3960,6 +3960,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-size: 1.4em;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -9607,8 +9608,11 @@ hr.light {
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
+  #mainNav .navbar-brand span{
+    color:var(--primary);
+  }
   #mainNav .navbar-brand:hover {
-    color: rgb(145, 103, 194);
+    /*color: rgb(145, 103, 194);*/
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.7);
@@ -9641,7 +9645,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(32, 32, 32, 0.8) 0%,rgba(49, 48, 48, 0.8) 100%), url("https://http2.mlstatic.com/adesivo-papel-parede-decorativo-salo-beleza-cabelo-castanho-D_NQ_NP_802911-MLB28381975033_102018-F.jpg");
+  background: linear-gradient(to bottom, rgba(32, 32, 32, 0.8) 0%,rgba(49, 48, 48, 0.8) 100%), url("../img/back.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -9741,7 +9745,7 @@ header.masthead h1 {
 
 .hovereffect img {
   display: block;
-  height: 275px;
+  height:100%;
   width: calc(100% + 20px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
@@ -9810,6 +9814,7 @@ header.masthead h1 {
   transform: translate3d(0,0,0);
 }
 
+
 footer{
   margin-top: 3rem;
 }
@@ -9865,7 +9870,7 @@ h2{
 .btn-contact{
   padding: 10px 25px;
   background-color: rgb(138, 157, 168);
- 
+  font-weight: 600;
 }
 
 #about{
@@ -9874,6 +9879,7 @@ h2{
 
 .btn-about{
   padding: 10px 25px;;
+  font-weight: 600;
 }
 
 .btn-contact:hover{
@@ -9966,10 +9972,15 @@ h2{
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  text-decoration: none;
   margin: 0 10px 10px 0;
 	color:  inherit;
 }
+
+.footer-distributed .footer-links a:hover{
+  color: #6f42c1;
+}
+
+
 
 .footer-distributed .footer-company-name{
 	color:var(--gray);
@@ -10120,8 +10131,10 @@ h2{
   outline-style:none;
 }
 
-.modal-body .carousel-item{
-  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%,rgba(0, 0, 0, 0.5) 100%);
+
+.modal-body .carousel-item img{
+  filter: brightness(50%);
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,rgba(0, 0, 0, 0.1) 100%);
 
 }
 
