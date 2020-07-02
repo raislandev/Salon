@@ -9,9 +9,11 @@ if(isset($_GET['status'])){
               var x = document.getElementById('snackbar');
               x.className = 'show';
               setTimeout(function(){ x.className = x.className.replace('show', ''); }, 3000);
+              
             </script>"
         );
-        $_GET['status'] = '';
+       
+
       
     }else{
         echo(
@@ -19,6 +21,8 @@ if(isset($_GET['status'])){
                 var x = document.getElementById('snackbarError');
                 x.className = 'show';
                 setTimeout(function(){ x.className = x.className.replace('show', ''); }, 3000);
+                var onlyUrl = window.location.href.replace(window.location.search,'');
+                
             </script>"
         );
     }
