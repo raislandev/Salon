@@ -10151,3 +10151,24 @@ h2{
     width: 100%;
   }
 }
+
+
+#icon1:hover{
+  background-color: #3b5998;
+}
+
+#icon2:hover{
+  background-color: #00acee;
+}
+
+#icon3:hover{
+  background-color: #0e76a8;
+}
+
+#icon4:hover{
+  background-color: #25d366;
+}
+
+#icon5:hover{
+  background-color: #e02929;
+}
