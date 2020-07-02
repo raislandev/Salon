@@ -2,13 +2,27 @@
 
 include_once './build/index.html';
 
-/*if(isset($_GET['status'])){
+if(isset($_GET['status'])){
     if($_GET['status'] == 'success'){
-        echo("<script>alert('Mensagem enviada com sucesso')</script>");
+        echo(
+            "<script>
+              var x = document.getElementById('snackbar');
+              x.className = 'show';
+              setTimeout(function(){ x.className = x.className.replace('show', ''); }, 3000);
+            </script>"
+        );
+        $_GET['status'] = '';
+      
     }else{
-        echo("<script>alert('Erro ao enviar a mensagem')</script>");
+        echo(
+            "<script>
+                var x = document.getElementById('snackbarError');
+                x.className = 'show';
+                setTimeout(function(){ x.className = x.className.replace('show', ''); }, 3000);
+            </script>"
+        );
     }
-}*/
+}
 
 
 ?>
