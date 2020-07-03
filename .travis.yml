@@ -11,11 +11,12 @@ sudo: required
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
   - composer install
+  - composer require --dev phpunit/phpunit ^6.4
   - composer require phpmailer/phpmailer
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
 script: 
-  - phpunit test.php
+  - ./vendor/bin/phpunit test.php
   
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
