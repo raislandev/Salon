@@ -9,7 +9,7 @@ $user = "ea1e4f6a8c94b6";
 $password ="e5e4a1fe8931f3";
 $mailDestino = 'raislan@live.com'; 
 $nome = 'raisla silva';	
-$assunto = "Mensagem recebida do site";
+$assunto = "Mensagem recebida do sites";
 $mensagem = "Recebemos uma mensagem no site <br/>
 	<strong>Nome:</strong> $_POST[name]<br/>
 	<strong>e-mail:</strong> $_POST[email]<br/>
