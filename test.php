@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class MyTeste extends TestCase
+class Test extends TestCase
 {
     public function testEmpty()
     {
