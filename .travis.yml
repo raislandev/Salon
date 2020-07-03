@@ -2,7 +2,7 @@
 language: php
 
 # Versão que a aplicação suporta.
-python:
+php:
   - "7.3.18"
 
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
