@@ -3,17 +3,19 @@ language: php
 
 # Versão que a aplicação suporta.
 php:
-  - "7.3.18"
+  - '7.0'
 
 # Faz a instalação com Sudo, para ter privilégio de Super Usuário.
 sudo: required
 
 # Instalação de Módulos que são necessários para a Aplicação.
 install:
+  - composer install
   - composer require phpmailer/phpmailer
 
 # Defini o script de Teste que deve rodar toda vez que o código for alterado.
-#script: phpunit
+script: 
+  - phpunit
   
 
 # Defini que o processo de Deploy será na Plataforma Heroku. É necessário informar o nome da APP criada no Heroku
